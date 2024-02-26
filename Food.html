@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    table, th, td {
+    border:1px solid black;
+                  }
+    
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Pakpanang Food</h1>
+  {{girlfriend_name}}
+  <table style="width:100%">
+    <tr>
+      <th>nickname</th>
+      <th>address</th>
+      <th>phoneno</th>
+      <th>Birthday</th>
+      <th>cutelevel</th>
+      <th>favoritefood</th>
+    </tr>
+    {% for item1 in girlfriend_name %}
+
+    <tr>
+      <td>{{item1.nickname}}</td>
+      <td>{{item1.address}}</td>
+      <td>{{item1.phoneno}}</td>
+      <td>{{item1.Birthday}}</td>
+      <td>{{item1.cutelevel}}</td>
+      <td>{{item1.favoritefood}}</td>
+    </tr>
+    {% endfor %}
+  </table> 
+
+  <p>This is a very basic rice and curry restaurant featuring excellent food from the south of Thailand. I saw no menu, and if there is one I doubt it's in English, but pans of curry are on display, so just point to what you want. Good choices run out early. I've eaten three meals here and all have been great. Enjoyed the gaeng som, kua kling, pad sataw, and gaeng tai plaa. Two curries on rice for 50b, with a glass of ice for 2b. Typical portion size for curry on rice. Beware that southern food can be eye watering, nose running spicy, but so flavorful.</p>
+  <img src="../static/assets/img/Food3.jpg" alt="" class='scale-down' style='width:1000px;height:700px'>
+</body>
+</html>
